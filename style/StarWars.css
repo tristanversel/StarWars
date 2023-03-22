@@ -388,7 +388,7 @@ to{transform : translateX(0px) ; opacity: 1;}}
         flex-direction: column;
         height: 100%;
         justify-content: space-evenly;
-        padding: 0;
+        padding: 100px 0px;
     }
 
     #navbar li{

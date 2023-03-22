@@ -145,96 +145,8 @@ li{
     align-items: center;
     height: max-content;
 }
-    
-@media all and (max-width: 1024px) {
 
-    #logo{
-        z-index: 2;
-    }
-
-    .open #logo, .open .toggle{
-        padding: 20px 0px;
-    }
-
-
-    .toggle{
-        display: flex;
-        font-size: 30px;
-        cursor: pointer;
-        z-index: 2;
-    }
-
-    .ouvrir{
-        display: flex;
-    }
-
-    .fermer{
-        display: none;
-    }
-
-    .open .ouvrir{
-        display: none;
-    }
-
-    .open .fermer{
-        display: flex;
-    }
-
-    .open #footer{
-        display: none;
-    }
-
-    .open header{
-        height: 100vh;
-        align-items: baseline;
-    }
-
-
-    #navbar{
-        position: absolute;
-        top:0;
-        left: 0;
-        flex-direction: column;
-        height: 100vh;
-        width: 100%;
-        background-color: black;
-        align-items: center;
-        transform: translateX(-100%);
-        transition: transform 0s;
-    }
-
-    .open #navbar{
-        transform: translateX(0);
-    }
-
-    #navbar ul{
-        flex-direction: column;
-        height: 100%;
-        justify-content: space-evenly;
-        padding: 0;
-    }
-
-    #navbar li{
-        align-self: center;
-        margin: 0;
-    }
-
-}
-
-
-@media only screen and (max-width: 500px) {
-    #footer{
-        display: none;
-    }
-    #nom{
-        display: none;
-    }
-
-    header{
-        padding: 20px 30px;
-    }
-
-}
+/* Fin du css commun */
 
 *{
     margin: 0;
@@ -243,7 +155,7 @@ li{
 
 #tableau{
     text-align: center;
-    background-color: rgb(15, 15, 15);
+    background-color: rgb(12, 12, 12);
     padding-bottom: 200px;
     font-family: 'Kanit', sans-serif;
     margin: 5vw;
@@ -359,6 +271,127 @@ table th{
     padding: 10px 20px;
 }
 
+    
+@media all and (max-width: 1024px) {
+
+    #logo{
+        z-index: 2;
+    }
+
+    .open #logo, .open .toggle{
+        padding: 20px 0px;
+    }
+
+
+    .toggle{
+        display: flex;
+        font-size: 30px;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .ouvrir{
+        display: flex;
+    }
+
+    .fermer{
+        display: none;
+    }
+
+    .open .ouvrir{
+        display: none;
+    }
+
+    .open .fermer{
+        display: flex;
+    }
+
+    .open #footer{
+        display: none;
+    }
+
+    .open header{
+        height: 100vh;
+        align-items: baseline;
+    }
+
+
+    #navbar{
+        position: absolute;
+        top:0;
+        left: 0;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        background-color: black;
+        align-items: center;
+        transform: translateX(-100%);
+        transition: transform 0s;
+    }
+
+    .open #navbar{
+        transform: translateX(0);
+    }
+
+    #navbar ul{
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-evenly;
+        padding: 100px 0px;
+
+    }
+
+    #navbar li{
+        align-self: center;
+        margin: 0;
+    }
+
+}
+
+
+@media only screen and (max-width: 500px) {
+    #footer{
+        display: none;
+    }
+    #nom{
+        display: none;
+    }
+
+    header{
+        padding: 20px 30px;
+    }
+
+    #tableau{
+        border-radius: 0;
+    }
+
+    #titre h2{
+        font-size: 23px;
+    }
+
+    #titre h1{
+        font-size: 38px;
+    }
+
+    #titre p{
+        margin-top: 20px;
+        font-size: 15px;
+    }
+
+    #catalogue{
+        margin-top: 40px;
+    }
+
+    #photo{
+        margin-top: 80px;
+    }
+
+    #photoimg{
+        width: 300px;
+        height: 300px;
+    }
+
+}
 
 
 
